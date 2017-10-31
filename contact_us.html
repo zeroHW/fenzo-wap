@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>联系我们</title>
+		<meta name="format-detection" content="telephone=no">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+		<link rel="stylesheet" href="css/default.css" />
+		<link rel="stylesheet" href="css/swiper.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script type="text/javascript">
+			(function(doc, win) {
+			    var docEl = doc.documentElement,
+			        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+			        recalc = function() {
+			            var clientWidth = docEl.clientWidth;
+			            if (!clientWidth) return;
+			            if (clientWidth >= 750) {
+			                docEl.style.fontSize = '100px';
+			            } else {
+			                docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+			            }
+			        };
+			
+			    if (!doc.addEventListener) return;
+			    win.addEventListener(resizeEvt, recalc, false);
+			    doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+	</head>
+	<body class="contact">
+		<div class="sideMenu" style="margin:0 auto">
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="service.html">服务</a></li>
+				<li><a href="about.html">关于</a></li>
+				<li><a href="case_choice.html">案例</a></li>
+				<li><a href="artical_all.html">文章</a></li>
+				<li><a href="contact_us.html">联系我们</a></li>
+			</ul>
+			<div><img src="images/logo_white.png"/></div>
+		</div>
+		<div class="slideBar"><a href="javascript:void(0)"></a></div>
+		<div class="divBoxWrap">
+			<div class="slide_shade"></div>
+			<div class="headerWrap">
+				<div class="header clearfix">
+					<div class="logo"><a href="javascript:void(0);"><img src="images/logo_white.png"/></a></div>
+				</div>
+			</div>
+			<div class="mainWrap">
+				<div class="slide_shade"></div>
+			</div>
+			<!--footer部分-->
+			<div class="footerWrap footer_about">
+				<div class="footer">
+					<div class="contact">
+						<div class="contact_first contact_first_service">
+							<h3>联系我们</h3>
+							<p>如果您有新的项目想与我们讨论，请给我们发送邮件或者填写下面这个表单，我们将会在2个工作日内与您取得联系。</p>
+							<form>
+								<input type="text" value="您的姓名:" onclick="if(value==defaultValue){value='';}" onblur="if(!value){value=defaultValue;}"/>
+								<input type="text" value="您的公司:" onclick="if(value==defaultValue){value='';}" onblur="if(!value){value=defaultValue;}"/>
+								<input type="text" value="您的电话:" onclick="if(value==defaultValue){value='';}" onblur="if(!value){value=defaultValue;}"/>
+								<input type="text" value="您的邮箱:" onclick="if(value==defaultValue){value='';}" onblur="if(!value){value=defaultValue;}"/>
+								<input type="text" value="项目类型:" onclick="if(value==defaultValue){value='';}" onblur="if(!value){value=defaultValue;}"/>
+								<input type="text" value="开始时间:(现在开始、一个月、暂不着急)" onclick="if(value==defaultValue){value='';}" onblur="if(!value){value=defaultValue;}"/>
+								<div>
+									<textarea onclick="if(value==defaultValue){value='';}" onblur="if(!value){value=defaultValue;}">需求描述:</textarea>
+								</div>
+								<input id="send_message" type="button" value="点击发送"/>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--遮罩弹层-->
+		<div class="layer"></div>
+		<div class="layer_cont">
+			<div class="er_code"><img src="images/er_code.jpg"/></div>
+			<p>保存或扫描二维码</p>
+			<p>关注风泽科技微信公众号</p>
+			<input type="button" value="确定" id="sure_btn"/>
+		</div>
+		<!--成功消息-->
+		<div class="message_prompt">发送成功</div>
+		<script src="js/jquery-1.8.0.min.js"></script>
+		<script src="js/swiper.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>

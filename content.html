@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>内容页</title>
+		<meta name="format-detection" content="telephone=no">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+		<link rel="stylesheet" href="css/default.css" />
+		<link rel="stylesheet" href="css/swiper.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script type="text/javascript">
+			(function(doc, win) {
+			    var docEl = doc.documentElement,
+			        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+			        recalc = function() {
+			            var clientWidth = docEl.clientWidth;
+			            if (!clientWidth) return;
+			            if (clientWidth >= 750) {
+			                docEl.style.fontSize = '100px';
+			            } else {
+			                docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+			            }
+			        };
+			
+			    if (!doc.addEventListener) return;
+			    win.addEventListener(resizeEvt, recalc, false);
+			    doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+	</head>
+	<body>
+		<div class="sideMenu" style="margin:0 auto">
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="service.html">服务</a></li>
+				<li><a href="about.html">关于</a></li>
+				<li><a href="case_choice.html">案例</a></li>
+				<li><a href="artical_all.html">文章</a></li>
+				<li><a href="contact_us.html">联系我们</a></li>
+			</ul>
+			<div><img src="images/logo_white.png"/></div>
+		</div>
+		<div class="slideBar"><a href="javascript:void(0)"></a></div>
+		<div class="divBoxWrap">
+			<div class="slide_shade"></div>
+			<div class="headerWrap">
+				<div class="header clearfix">
+					<div class="logo"><a href="javascript:void(0);"><img src="images/logo_white.png"/></a></div>
+				</div>
+			</div>
+			<!--banner部分-->
+			<div class="bannerWarp bannerWarp2">
+				<div class="banner content_banner">
+					<div class="background_div"></div>
+					<img src="temp/cont_background.jpg"/>
+					<div class="triangle_down"></div>
+				</div>
+			</div>
+			<div class="mainWrap mainWrap2">
+				<div class="content_cont">
+					<div class="cont_top cleafix">
+						<a href="#" class="sina_icon_cont"></a>
+						<a href="#" class="weixin_icon_cont weixin_icon scan_code1"></a>
+					</div>
+					<div class="cont_center">
+						<div class="tit cleafix">
+							<h3>印娃— —新一代移动打印解决方案</h3>
+							<span>产品设计 · 用户研究 · 交互设计 · 视觉设计</span>
+						</div>
+						<p>印娃创始人李兵（明一），国内领先OA企业志诚泰和创始人之一，拥有着20年OA行业从业经验，多年来也一直致力于探索OA行业的未来，对此问题有着成熟的思考及明确的策略。</p>
+						<p>2016年4月，风泽科技和印娃团队达成了战略合作，将共同打造这款移动打印产品，为众多移动办公人群提供便捷、专业的打印服务。</p>
+						<img src="temp/content_img.jpg"/>
+					</div>
+					<div class="more_case">
+						<h3>更多案例</h3>
+						<div class="swiper-container" id="swiper3">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="content.html"><img src="temp/img_1.jpg"/><h3>印娃OA打印app</h3></a>
+									<a href="content.html"><img src="temp/img_2.jpg"/><h3>CEE城市探秘</h3></a>
+									<a href="content.html"><img src="temp/img_3.jpg"/><h3>施耐德电气</h3></a>
+									<a href="content.html"><img src="temp/img_4.jpg"/><h3>疯象官网</h3></a>
+								</div>
+								<div class="swiper-slide">
+									<a href="content.html"><img src="temp/img_1.jpg"/><h3>印娃OA打印app</h3></a>
+									<a href="content.html"><img src="temp/img_2.jpg"/><h3>CEE城市探秘</h3></a>
+									<a href="content.html"><img src="temp/img_3.jpg"/><h3>施耐德电气</h3></a>
+									<a href="content.html"><img src="temp/img_4.jpg"/><h3>疯象官网</h3></a>
+								</div>
+								<div class="swiper-slide">
+									<a href="content.html"><img src="temp/img_1.jpg"/><h3>印娃OA打印app</h3></a>
+									<a href="content.html"><img src="temp/img_2.jpg"/><h3>CEE城市探秘</h3></a>
+									<a href="content.html"><img src="temp/img_3.jpg"/><h3>施耐德电气</h3></a>
+									<a href="content.html"><img src="temp/img_4.jpg"/><h3>疯象官网</h3></a>
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--footer部分-->
+			<div class="footerWrap" id="contact_us">
+				<div class="footer footer2">
+					<div class="contact">
+						<div class="contact_first contact_first2">
+							<h3><a href="contact_us.html">合作项目</a></h3>
+							<h3><a href="index.html#contact_us_bottom">联系我们</a></h3>
+						</div>
+						<div class="contact_second">
+							<span class="icon_span clearfix">
+								<a class="sina_icon" href="#"></a>
+								<a class="weixin_icon" href="javascript:void(0);"></a>
+								<a class="in_icon" href="#"></a>
+							</span>
+						</div>
+					</div>
+					<div class="copyright copyright2">
+						<div>COPYRIGHT © 2016 北京风泽科技有限公司</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--遮罩弹层-->
+		<div class="layer"></div>
+		<div class="layer_cont">
+			<div class="er_code"><img src="images/er_code.jpg"/></div>
+			<p>保存或扫描二维码</p>
+			<p>关注风泽科技微信公众号</p>
+			<input type="button" value="确定" id="sure_btn"/>
+		</div>
+		<script src="js/jquery-1.8.0.min.js"></script>
+		<script src="js/swiper.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>

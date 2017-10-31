@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+		<meta name="format-detection" content="telephone=no">
+		<script type="text/javascript">
+			(function(doc, win) {
+			    var docEl = doc.documentElement,
+			        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+			        recalc = function() {
+			            var clientWidth = docEl.clientWidth;
+			            if (!clientWidth) return;
+			            if (clientWidth >= 750) {
+			                docEl.style.fontSize = '100px';
+			            } else {
+			                docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+			            }
+			        };
+			
+			    if (!doc.addEventListener) return;
+			    win.addEventListener(resizeEvt, recalc, false);
+			    doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.css" />
+	</head>
+	<body>
+		<div class="sideMenu">
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="service.html">服务</a></li>
+				<li><a href="about.html">关于</a></li>
+				<li><a href="case_choice.html">案例</a></li>
+				<li><a href="artical_all.html">文章</a></li>
+				<li><a href="contact_us.html">联系我们</a></li>
+			</ul>
+			<div><img src="images/logo_white.png"/></div>
+		</div>
+		<div class="slideBar"><a href="javascript:void(0)"></a></div>
+		<div class="divBoxWrap">
+			<div class="slide_shade"></div>
+			<div class="headerWrap">
+				<div class="header clearfix">
+					<div class="logo"><a href="javascript:void(0);"><img src="images/logo_white.png"/></a></div>
+				</div>
+			</div>
+			<div class="bannerWrap">
+				<div class="banner">
+					<div class="swiper-container" id="swiper1">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><a href="#"><div class="background_div"></div><img src="temp/banner.jpg"></a></div>
+							<div class="swiper-slide"><a href="#"><div class="background_div"></div><img src="temp/banner.jpg"></a></div>
+							<div class="swiper-slide"><a href="#"><div class="background_div"></div><img src="temp/banner.jpg"></a></div>
+						</div>
+					</div>
+				</div>
+				<div class="triangle_down"></div>
+			</div>
+			<div class="mainWrap">
+				<!--服务部分-->
+				<div class="mainDiv service">
+					<div class="title">
+						<p class="title_p1">服务</p>
+						<p class="title_p2">来自一线互联网公司的技术大拿，<br />打造可落地实现的出色产品</p>
+					</div>
+					<div class="service_cont">
+						<ul>
+							<li>
+								<a href="javascript:void(0);">
+									<span></span>
+									<p>技术咨询</p>
+									<p class="service_p2">根据客户需求选择最佳的解决方案</p>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">
+									<span></span>
+									<p>产品研发</p>
+									<p class="service_p2">合理的团队配置，打磨每一个产品细节</p>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">
+									<span></span>
+									<p>测试运维</p>
+									<p class="service_p2">专业的品控部门，保证高质量产品的输出和维护</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--案例部分-->
+				<div class="mainDiv cases">
+					<div class="cases_title_cont">
+						<div class="background_div"></div>
+						<div class="triangle_up"></div>
+						<div class="title">
+							<p class="title_p1">案例</p>
+							<p class="title_p2">我们以用户体验为核心，提供互联网相关产品的技术服务</p>
+						</div>
+						<div class="triangle_down"></div>
+					</div>
+					<div class="cases_cont">
+						<ul>
+							<li><a href="content.html"><img src="temp/img_1.jpg"/><h3>印娃OA打印app</h3></a></li>
+							<li><a href="content.html"><img src="temp/img_2.jpg"/><h3>CEE城市探秘</h3></a></li>
+							<li><a href="content.html"><img src="temp/img_3.jpg"/><h3>施耐德电气</h3></a></li>
+							<li><a href="content.html"><img src="temp/img_4.jpg"/><h3>风泽fenzo官网</h3></a></li>
+							<li><a href="content.html"><img src="temp/img_5.jpg"/><h3>疯象官网</h3></a></li>
+							<li><a href="content.html"><img src="temp/img_6.jpg"/><h3>zero社区</h3></a></li>
+							<li><a href="content.html"><img src="temp/img_7.jpg"/><h3>优酷</h3></a></li>
+							<li><a href="content.html"><img src="temp/img_3.jpg"/><h3>施耐德电气</h3></a></li>
+						</ul>
+					</div>
+				</div>
+				<!--团队部分-->
+				<div class="mainDiv team">
+					<div class="title">
+						<p class="title_p1">团队</p>
+						<p class="title_p2">我们以用户体验为核心，提供互联网相关</p>
+					</div>
+					<div class="team_cont">
+						<div class="swiper-container" id="swiper2">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="javascript:void(0);">
+										<img src="temp/img_8.jpg"/>
+										<span>RD</span>
+										<h3>
+											<span>Hanmeimei1</span>
+											<p>专业而且知名前端工程师</p>
+										</h3>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="javascript:void(0);">
+										<img src="temp/img_8.jpg"/>
+										<span>RD</span>
+										<h3>
+											<span>德玛西亚2</span>
+											<p>专业攻城拔寨20年，攻无不克战无不胜</p>
+										</h3>
+									</a>								
+								</div>
+								<div class="swiper-slide">
+									<a href="javascript:void(0);">
+										<img src="temp/img_8.jpg"/>
+										<span>RD</span>
+										<h3>
+											<span>德玛西亚3</span>
+											<p>专业攻城拔寨20年，攻无不克战无不胜</p>
+										</h3>
+									</a>								
+								</div>
+								<div class="swiper-slide">
+									<a href="javascript:void(0);">
+										<img src="temp/img_8.jpg"/>
+										<span>RD</span>
+										<h3>
+											<span>德玛西亚4</span>
+											<p>专业攻城拔寨20年，攻无不克战无不胜</p>
+										</h3>
+									</a>								
+								</div>
+								<div class="swiper-slide">
+									<a href="javascript:void(0);">
+										<img src="temp/img_8.jpg"/>
+										<span>RD</span>
+										<h3>
+											<span>德玛西亚5</span>
+											<p>专业攻城拔寨20年，攻无不克战无不胜</p>
+										</h3>
+									</a>								
+								</div>
+								<div class="swiper-slide">
+									<a href="javascript:void(0);">
+										<img src="temp/img_8.jpg"/>
+										<span>RD</span>
+										<h3>
+											<span>德玛西亚6</span>
+											<p>专业攻城拔寨20年，攻无不克战无不胜</p>
+										</h3>
+									</a>								
+								</div>
+								<div class="swiper-slide">
+									<a href="javascript:void(0);">
+										<img src="temp/img_8.jpg"/>
+										<span>RD</span>
+										<h3>
+											<span>德玛西亚7</span>
+											<p>专业攻城拔寨20年，攻无不克战无不胜</p>
+										</h3>
+									</a>								
+								</div>
+								<div class="swiper-slide">
+									<a href="javascript:void(0);">
+										<img src="temp/img_8.jpg"/>
+										<span>RD</span>
+										<h3>
+											<span>德玛西亚8</span>
+											<p>专业攻城拔寨20年，攻无不克战无不胜</p>
+										</h3>
+									</a>								
+								</div>
+								<div class="swiper-slide">
+									<a href="javascript:void(0);">
+										<img src="temp/img_8.jpg"/>
+										<span>RD</span>
+										<h3>
+											<span>德玛西亚9</span>
+											<p>专业攻城拔寨20年，攻无不克战无不胜</p>
+										</h3>
+									</a>								
+								</div>
+								<div class="swiper-slide">
+									<a href="javascript:void(0);">
+										<img src="temp/img_8.jpg"/>
+										<span>RD</span>
+										<h3>
+											<span>德玛西亚10</span>
+											<p>专业攻城拔寨20年，攻无不克战无不胜</p>
+										</h3>
+									</a>								
+								</div>
+								<div class="swiper-slide">
+									<a href="javascript:void(0);">
+										<img src="temp/img_8.jpg"/>
+										<span>RD</span>
+										<h3>
+											<span>德玛西亚11</span>
+											<p>专业攻城拔寨20年，攻无不克战无不胜</p>
+										</h3>
+									</a>								
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+				<!--合作客户-->
+				<div class="mainDiv customer">
+					<div class="background_div"></div>
+					<div class="triangle_up"></div>
+					<div class="customer_cont">
+						<div class="title">
+							<p class="title_p1">合作客户</p>
+							<p class="title_p2">50+项目合作经验，为您创造真正的商业价值</p>
+						</div>
+						<div class="customer_name">
+							<ul>
+								<li><a href="#"><img src="images/cus_1.png"/></a></li>
+								<li><a href="#"><img src="images/cus_2.png"/></a></li>
+								<li><a href="#"><img src="images/cus_3.png"/></a></li>
+								<li><a href="#"><img src="images/cus_4.png"/></a></li>
+								<li><a href="#"><img src="images/cus_5.png"/></a></li>
+								<li><a href="#"><img src="images/cus_6.png"/></a></li>
+								<li><a href="#"><img src="images/cus_7.png"/></a></li>
+								<li><a href="#"><img src="images/cus_8.png"/></a></li>
+								<li><a href="#"><img src="images/cus_9.png"/></a></li>
+								<li><a href="#"><img src="images/cus_10.png"/></a></li>
+								<li><a href="#"><img src="images/cus_11.png"/></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="triangle_down"></div>
+				</div>
+			</div>
+			<!--footer部分-->
+			<div class="footerWrap" id="contact_us">
+				<div class="footer">
+					<div class="contact">
+						<div class="contact_first contact_first_1 contact_first_service">
+							<h3>联系我们</h3>
+							<p>如果您有新的项目想与我们讨论，请给我们发送邮件或者填写下面这个表单，我们将会在2个工作日内与您取得联系。</p>
+							<form>
+								<input type="text" value="您的姓名:" onclick="if(value==defaultValue){value='';}" onblur="if(!value){value=defaultValue;}"/>
+								<input type="text" value="您的公司:" onclick="if(value==defaultValue){value='';}" onblur="if(!value){value=defaultValue;}"/>
+								<input type="text" value="您的电话:" onclick="if(value==defaultValue){value='';}" onblur="if(!value){value=defaultValue;}"/>
+								<input type="text" value="您的邮箱:" onclick="if(value==defaultValue){value='';}" onblur="if(!value){value=defaultValue;}"/>
+								<input type="text" value="项目类型:" onclick="if(value==defaultValue){value='';}" onblur="if(!value){value=defaultValue;}"/>
+								<input type="text" value="开始时间:(现在开始、一个月、暂不着急)" onclick="if(value==defaultValue){value='';}" onblur="if(!value){value=defaultValue;}"/>
+								<div>
+									<textarea onclick="if(value==defaultValue){value='';}" onblur="if(!value){value=defaultValue;}">需求描述:</textarea>
+								</div>
+								<input id="send_message" type="button" value="点击发送"/>
+							</form>
+						</div>
+						<div class="contact_second" id="contact_us_bottom">
+							<span>北京风泽科技有限公司</span>
+							<span>电话：18591996299 / 18601491718</span>
+							<span>邮编：101100</span>
+							<span>邮箱： service@fenzotech.com</span>
+							<span class="icon_span clearfix">
+								<a class="sina_icon" href="#"></a>
+								<a class="weixin_icon" href="javascript:void(0);"></a>
+								<a class="in_icon" href="#"></a>
+							</span>
+						</div>
+					</div>
+					<div class="copyright">
+						<div>COPYRIGHT © 2016 北京风泽科技有限公司</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--遮罩弹层-->
+		<div class="layer"></div>
+		<div class="layer_cont">
+			<div class="er_code"><img src="images/er_code.jpg"/></div>
+			<p>保存或扫描二维码</p>
+			<p>关注风泽科技微信公众号</p>
+			<input type="button" value="确定" id="sure_btn"/>
+		</div>
+		<!--成功消息-->
+		<div class="message_prompt">发送成功</div>
+		<script src="js/jquery-1.8.0.min.js"></script>
+		<script src="js/swiper.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>
